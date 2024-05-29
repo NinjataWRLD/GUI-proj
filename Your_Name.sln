@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ivan_Angelov_Working", "Ivan_Angelov_Working\Ivan_Angelov_Working.csproj", "{E586B803-C56E-4929-9CD8-03BB4C68410F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI_Task", "GUI_Task\GUI_Task.csproj", "{E586B803-C56E-4929-9CD8-03BB4C68410F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

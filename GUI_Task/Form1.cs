@@ -1,4 +1,4 @@
-using System.Text;
+п»їusing System.Text;
 using System.Text.RegularExpressions;
 
 namespace Ivan_Angelov_Working
@@ -38,7 +38,7 @@ namespace Ivan_Angelov_Working
             int words = this.textBoxContent.Text.Split().Length;
             int symbols = this.textBoxContent.Text.Length;
             Regex regexLatinLetters = new(@"[A-Za-z]");
-            Regex regexCyrillicLetters = new(@"[А-Яа-я]");
+            Regex regexCyrillicLetters = new(@"[Рђ-РЇР°-СЏ]");
             foreach (char c in this.textBoxContent.Text)
             {
                 if (c == ' ') spaces++;
@@ -54,13 +54,13 @@ namespace Ivan_Angelov_Working
             }
 
             StringBuilder sb = new();
-            sb.AppendLine("Статистика за текста:");
-            sb.AppendLine($"Целият текст има {symbols} символа.");
-            sb.AppendLine($"Целият текст има {cyrillicLetters} символа на кирилица.");
-            sb.AppendLine($"Целият текст има {latinLetters} символа на латинеца.");
-            sb.AppendLine($"Целият текст има {spaces} интервала.");
-            sb.AppendLine($"Целият текст има {words} думи.");
-            sb.AppendLine($"Целият текст има {digits} числа.");
+            sb.AppendLine("РЎС‚Р°С‚РёСЃС‚РёРєР° Р·Р° С‚РµРєСЃС‚Р°:");
+            sb.AppendLine($"Р¦РµР»РёСЏС‚ С‚РµРєСЃС‚ РёРјР° {symbols} СЃРёРјРІРѕР»Р°.");
+            sb.AppendLine($"Р¦РµР»РёСЏС‚ С‚РµРєСЃС‚ РёРјР° {cyrillicLetters} СЃРёРјРІРѕР»Р° РЅР° РєРёСЂРёР»РёС†Р°.");
+            sb.AppendLine($"Р¦РµР»РёСЏС‚ С‚РµРєСЃС‚ РёРјР° {latinLetters} СЃРёРјРІРѕР»Р° РЅР° Р»Р°С‚РёРЅРµС†Р°.");
+            sb.AppendLine($"Р¦РµР»РёСЏС‚ С‚РµРєСЃС‚ РёРјР° {spaces} РёРЅС‚РµСЂРІР°Р»Рё.");
+            sb.AppendLine($"Р¦РµР»РёСЏС‚ С‚РµРєСЃС‚ РёРјР° {words} РґСѓРјРё.");
+            sb.AppendLine($"Р¦РµР»РёСЏС‚ С‚РµРєСЃС‚ РёРјР° {digits} С†РёС„СЂРё.");
 
             this.textBoxData.Text += sb.ToString();
         }
